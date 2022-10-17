@@ -59,11 +59,11 @@ public class Hover {
 		
 		
 	}
-//     @AfterTest
-//	public static void tearDown() {
-//		driver.close();
-//		driver.quit();
-//	}
+     @AfterTest
+	public static void tearDown() {
+		driver.close();
+		driver.quit();
+	}
 
 
 

@@ -16,9 +16,7 @@ public class BrowserFactory {
 	static String browser = "chrome";
 	static String url = "http://localhost:7080/upload";
 
-//	public static void setup() {
-//		
-//	}
+
 
 	@BeforeTest
 	public static void launchBrowser() {

@@ -17,10 +17,6 @@ public class BrowserFactory {
 	static String browser = "chrome";
 	static String url = "http://localhost:7080/dropdown";
 
-//	public static void setup() {
-//		
-//	}
-
 	@BeforeTest
 	public static void launchBrowser() {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
@@ -39,10 +35,10 @@ public class BrowserFactory {
 	}
 	
 	
-//    @Test
-//	public static void tearDown() {
-//		driver.close();
-//		driver.quit();
-//	}
+    @Test
+	public static void tearDown() {
+		driver.close();
+		driver.quit();
+	}
 
 }

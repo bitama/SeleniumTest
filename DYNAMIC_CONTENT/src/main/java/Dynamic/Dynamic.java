@@ -35,7 +35,7 @@ public class Dynamic {
 	}
 
 	@Test
-	public static void switchToIframe() throws InterruptedException {
+	public static void checkDynamic() throws InterruptedException {
 	By element = By.xpath("//*[@id=\"content\"]/div[3]/div[2]");
         WebDriverWait wait = new WebDriverWait(driver, 20);
         

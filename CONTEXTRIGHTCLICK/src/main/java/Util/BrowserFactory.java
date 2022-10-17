@@ -20,10 +20,6 @@ public class BrowserFactory {
 	static String browser = "chrome";
 	static String url = "http://localhost:7080/drag_and_drop";
 
-//	public static void setup() {
-//		
-//	}
-
 	@BeforeTest
 	public static void launchBrowser() {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
@@ -41,18 +37,7 @@ public class BrowserFactory {
 		
 		WebElement sourcElement=driver.findElement(By.xpath("//div[@id='column-a']"));
 		WebElement targetElement=driver.findElement(By.xpath("//div[@id='column-b']"));
-//		Actions actions = new Actions(driver);
 		
-//		actions.clickAndHold(sourcElement).moveToElement(targetElement).release().build().perform();
-//		actions.dragAndDropBy(sourcElement,116,16).perform();
-//		final Actions action = new Actions(driver);
-//		action.clickAndHold(sourcElement)
-//		.moveByOffset(-1, -1) // To fix issue with drag and drop in Chrome V61.0.3163.79
-//		.moveToElement(targetElement, targetElement.getLocation().getX()+targetElement.getSize().getWidth()/2, targetElement.getLocation().getY()+targetElement.getSize().getHeight()/2)
-//		.release(targetElement)
-//		.build()
-//		.perform();
-//		
 		int x = sourcElement.getLocation().x;
         int y = targetElement.getLocation().y;
 
@@ -70,7 +55,7 @@ public class BrowserFactory {
 	}
 	
 	
-//     @Test
+     @Test
 	public static void tearDown() {
 		driver.close();
 		driver.quit();

@@ -34,10 +34,10 @@ public class FLoat {
 		js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
 
 	}
-//    @AfterTest
-//	public static void tearDown() {
-//		driver.close();
-//		driver.quit();
-//	}
+    @AfterTest
+	public static void tearDown() {
+		driver.close();
+		driver.quit();
+	}
 
 }
