@@ -1,0 +1,61 @@
+package Dynamic;
+
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Dynamic {
+	static WebDriver driver;
+	static String browser = "chrome";
+	static String url = "http://localhost:7080/dynamic_content?with_content=static";
+	static String textString="Assumenda";
+	static Integer counter  =1;
+	static boolean isTestxtPresent=false;
+
+	@BeforeTest
+	public static void launchBrowser() {
+
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+	}
+
+	@Test
+	public static void switchToIframe() throws InterruptedException {
+	By element = By.xpath("//*[@id=\"content\"]/div[3]/div[2]");
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        
+        while(!isTestxtPresent){
+        	System.out.println(driver.findElement(element).getText());
+			isTestxtPresent = wait.until(ExpectedConditions.textToBePresentInElementLocated((By) element, textString));
+			
+			if(isTestxtPresent) {
+				System.out.println("The text " + textString + " is present");
+				for(int i=0;i<10;i++) {
+					driver.navigate().refresh();
+					}
+				break;
+			}
+        }
+        System.out.println("ExpectedConditions.textToBePresentInElement successful with text " + textString + " found after " + counter + " attempts\n");
+	}
+     @AfterTest
+	public static void tearDown() {
+		driver.close();
+		driver.quit();
+	}
+}

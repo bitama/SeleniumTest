@@ -1,0 +1,63 @@
+package window;
+
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import javax.xml.transform.Source;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class NewWindow {
+	static WebDriver driver;
+	static String browser = "chrome";
+	static String url = " http://localhost:7080/windows";
+
+//	public static void setup() {
+//		
+//	}
+
+	@BeforeTest
+	public static void launchBrowser() {
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+	}
+
+	@Test
+	public void newWindodChech() throws InterruptedException {
+	WebElement element=driver.findElement(By.xpath("//div[@class='example']/a"));
+	element.click();
+	
+	
+	Set<String>windows=driver.getWindowHandles();
+	for(String win:windows) {
+		System.out.println(win);
+	}
+	
+	String actualTitle = driver.getTitle();
+	String expectedTitle = "New Window";
+	Assert.assertEquals(actualTitle,expectedTitle);
+	
+		
+		
+	
+		
+	}
+//     @Test
+//	public static void tearDown() {
+//		driver.close();
+//		driver.quit();
+//	}
+
+}

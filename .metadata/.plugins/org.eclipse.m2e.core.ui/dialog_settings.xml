@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Patrick  Perereza\Documents\JAVA\TESTWORKSPSACE\NewWindow\src\main\java\window\NewWindow.java"/>
+			<item value="C:\Users\Patrick  Perereza\Documents\JAVA\TESTWORKSPSACE\IFRAMEPROJECT\src\main\java\Iframes\BrowserFactory.java"/>
+			<item value="C:\Users\Patrick  Perereza\Documents\JAVA\TESTWORKSPSACE\SELENIUM_CHECKBOX_PROJECT\pom.xml"/>
+			<item value="C:\Users\Patrick  Perereza\Documents\JAVA\TESTWORKSPSACE\DRAG_AND_DROP"/>
+			<item value="C:\Users\Patrick  Perereza\Documents\JAVA\TESTWORKSPSACE\CONTEXTRIGHTCLICK\src\main\java\Util\BrowserFactory.java"/>
+			<item value="C:\Users\Patrick  Perereza\Documents\JAVA\TESTWORKSPSACE\SELENIUM_CHECKBOX_PROJECT\src\main\java\util\BrowserFactory.java"/>
+			<item value="C:\Users\Patrick  Perereza\Documents\JAVA\PROJECT3JAVA_SELENIUM\SELENIUM_LOGIN_PROJECT"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.mouseEvent.DYNAMIC_CONTENT"/>
+			<item value="com.mouseEvent.NOTIFICATIONPROJECT"/>
+			<item value="com.mouseEvent.NewWindow"/>
+			<item value="com.mouseEvent.JSERRORS"/>
+			<item value="com.mouseEvent.JsALERT"/>
+			<item value="com.mouseEvent.HOVERpROJECT"/>
+			<item value="com.mouseEvent.IFRAMEPROJECT"/>
+			<item value="com.mouseEvent.IFRAME"/>
+			<item value="com.mouseEvent.FILEUPLOADaNDFILEDOWNLOAD"/>
+			<item value="com.mouseEvent.DROPDOWNPROJECT"/>
+			<item value="com.mouseEvent.DRAG_AND_DROP"/>
+			<item value="com.mouseEvent.CONTEXTGHTCLICK"/>
+			<item value="com.checkbox.SELENIUM_CHECKBOX_PROJECT"/>
+		</list>
+		<list key="groupId">
+			<item value="com.mouseEvent"/>
+			<item value="com.checkbox"/>
+		</list>
+		<list key="artifactId">
+			<item value="DYNAMIC_CONTENT"/>
+			<item value="NOTIFICATIONPROJECT"/>
+			<item value="NewWindow"/>
+			<item value="JSERRORS"/>
+			<item value="JsALERT"/>
+			<item value="HOVERpROJECT"/>
+			<item value="IFRAMEPROJECT"/>
+			<item value="IFRAME"/>
+			<item value="FILEUPLOADaNDFILEDOWNLOAD"/>
+			<item value="DROPDOWNPROJECT"/>
+			<item value="DRAG_AND_DROP"/>
+			<item value="CONTEXTGHTCLICK"/>
+			<item value="SELENIUM_CHECKBOX_PROJECT"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

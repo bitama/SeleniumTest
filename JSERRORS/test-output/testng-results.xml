@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-15T19:44:08 CDT" name="Default suite" finished-at="2022-10-15T19:44:26 CDT" duration-ms="18351">
+    <groups>
+    </groups>
+    <test started-at="2022-10-15T19:44:08 CDT" name="Default test" finished-at="2022-10-15T19:44:26 CDT" duration-ms="18351">
+      <class name="Errors.Error">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Errors.Error@212b5695]" started-at="2022-10-15T19:44:08 CDT" name="launchBrowser" finished-at="2022-10-15T19:44:10 CDT" duration-ms="1977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="findPageLogs()[pri:0, instance:Errors.Error@212b5695]" started-at="2022-10-15T19:44:10 CDT" name="findPageLogs" finished-at="2022-10-15T19:44:10 CDT" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findPageLogs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Errors.Error@212b5695]" started-at="2022-10-15T19:44:10 CDT" name="tearDown" finished-at="2022-10-15T19:44:26 CDT" duration-ms="16314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Errors.Error -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

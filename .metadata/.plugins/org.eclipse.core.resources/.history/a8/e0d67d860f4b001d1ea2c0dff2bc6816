@@ -1,0 +1,52 @@
+package Page;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+
+public class LoginPage {
+	public WebDriver driver;
+
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	@FindBy(how = How.XPATH, using = "//input[@id='username']")
+	WebElement USERNAME_LOCATOR;
+
+	@FindBy(how = How.XPATH, using = "//input[@id='password']")
+	WebElement PASSWORD_LOCATOR;
+
+	@FindBy(how = How.XPATH, using = "//i[@class='fa fa-2x fa-sign-in']")
+	WebElement LOGIN_LOCATOR;
+
+	@FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/div/h2")
+	WebElement LOGINPAGE_LOCATOR;
+
+
+	public void insertUserName(String username) {
+		USERNAME_LOCATOR.sendKeys(username);
+	}
+
+	public void insertPassword(String password) {
+		PASSWORD_LOCATOR.sendKeys(password);
+	}
+
+	public String verifyTitle() {
+		String expectedText = "Secure Area";
+		String actualText = LOGINPAGE_LOCATOR.getText();
+		System.out.println(actualText);
+		Assert.assertEquals(actualText, expectedText);
+		return actualText;
+	}
+	
+
+	public void clickToLogin() {
+		LOGIN_LOCATOR.click();
+		verifyTitle();
+	}
+
+}

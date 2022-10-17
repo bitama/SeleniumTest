@@ -1,0 +1,52 @@
+package Notification;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Notifications {
+	static WebDriver driver;
+	static String browser = "chrome";
+	static String url = "http://localhost:7080/notification_message_rendered";
+
+	@BeforeTest
+	public static void launchBrowser() {
+
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+	}
+
+	@Test
+	public void clickTonotification() throws InterruptedException {
+		for (int i = 0; i < 10; i++) {
+			WebElement element = driver.findElement(By.xpath("//div[@class='example']/p/a"));
+			element.click();
+			Thread.sleep(2000);
+
+		}
+
+		String text = driver.findElement(By.xpath("//div[@id='flash']")).getText();
+		
+		String message = text.contains("Action unsuccesful, please try again") || text.contains("Action successful")
+				? "Your are at successfull page"
+				: "";
+		System.out.println(message);
+
+	}
+    @AfterTest
+    public static void tearDown() {
+   	 driver.close();
+   	 driver.quit();
+    }
+}

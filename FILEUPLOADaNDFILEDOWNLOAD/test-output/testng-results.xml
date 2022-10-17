@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-16T18:11:49 CDT" name="Default suite" finished-at="2022-10-16T18:11:54 CDT" duration-ms="4478">
+    <groups>
+    </groups>
+    <test started-at="2022-10-16T18:11:49 CDT" name="Default test" finished-at="2022-10-16T18:11:54 CDT" duration-ms="4478">
+      <class name="FLAOTINGMENU.FLoat">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:FLAOTINGMENU.FLoat@29d89d5d]" started-at="2022-10-16T18:11:49 CDT" name="launchBrowser" finished-at="2022-10-16T18:11:54 CDT" duration-ms="4372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="scrollUpAndDown()[pri:0, instance:FLAOTINGMENU.FLoat@29d89d5d]" started-at="2022-10-16T18:11:54 CDT" name="scrollUpAndDown" finished-at="2022-10-16T18:11:54 CDT" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollUpAndDown -->
+      </class> <!-- FLAOTINGMENU.FLoat -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

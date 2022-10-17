@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-15T21:32:46 CDT" name="Default suite" finished-at="2022-10-15T21:32:48 CDT" duration-ms="2353">
+    <groups>
+    </groups>
+    <test started-at="2022-10-15T21:32:46 CDT" name="Default test" finished-at="2022-10-15T21:32:48 CDT" duration-ms="2353">
+      <class name="Iframes.BrowserFactory">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Iframes.BrowserFactory@446293d]" started-at="2022-10-15T21:32:46 CDT" name="launchBrowser" finished-at="2022-10-15T21:32:48 CDT" duration-ms="2155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="switchToIframe()[pri:0, instance:Iframes.BrowserFactory@446293d]" started-at="2022-10-15T21:32:48 CDT" name="switchToIframe" finished-at="2022-10-15T21:32:48 CDT" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchToIframe -->
+      </class> <!-- Iframes.BrowserFactory -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

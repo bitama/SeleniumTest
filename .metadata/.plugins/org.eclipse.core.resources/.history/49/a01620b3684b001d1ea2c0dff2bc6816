@@ -1,0 +1,48 @@
+package Iframes;
+
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import Page.LoginPage;
+import util.BrowserFactory;
+
+public class LoginTest {
+	public WebDriver driver;
+	 public LoginPage loginPage;
+	
+	@BeforeTest
+	public void userShouldBeAbleTologinWithValidCredentials(){
+		driver=BrowserFactory.launchBrowser();
+		loginPage =PageFactory.initElements(driver, LoginPage.class);
+		loginPage.insertUserName("tomsmith");
+		loginPage.insertPassword("SuperSecretPassword!");
+		loginPage.clickToLogin();
+        loginPage.verifyTitle();
+		closeAllWindows();
+		
+	}
+	@Test
+	public void userShouldBeAbleTologinWithInValidCredentials(){
+		driver=BrowserFactory.launchBrowser();
+		loginPage =PageFactory.initElements(driver, LoginPage.class);
+		loginPage.insertUserName("tomsmit");
+		loginPage.insertPassword("SuperSecretPassword");
+		loginPage.clickToLogin();
+		loginPage.verifyTitle();
+		
+		}
+	
+	
+	
+    @AfterTest
+	public void closeAllWindows() {
+		BrowserFactory.tearDown();
+		
+	}
+}

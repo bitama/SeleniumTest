@@ -1,0 +1,13 @@
+package com.checkbox.SELENIUM_CHECKBOX_PROJECT;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}
